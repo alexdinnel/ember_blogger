@@ -32,7 +32,9 @@
             </thead>
             {{#each}}
               <tr><td>
-                {{title}} <small class="muted">by {{author.name}}</small>
+                {{#link-to 'post' this}}
+                  {{title}} <small class="muted">by {{author.name}}</small>
+                {{/link-to}}
               </td></tr>
             {{/each}}
           </table>
