@@ -20,7 +20,7 @@ App.PostController = Ember.ObjectController.extend({
   actions: {
     edit: function() {
       this.set('isEditing', true);
-    }
+    },
 
     doneEditing: function() {
       this.set('isEditing', false);
