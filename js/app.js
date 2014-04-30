@@ -6,6 +6,11 @@ App.Router.map(function(){
   this.resource('posts');
 });
 
+App.PostsRoute = Ember.Route.extend({
+  model: function() {
+    return posts;
+  }
+});
 
 var posts = [{
   id: '1',
